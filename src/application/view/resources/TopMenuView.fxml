@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+  <menus>
+    <Menu mnemonicParsing="false" text="Menu">
+      <items>
+            <MenuItem mnemonicParsing="false" onAction="#onLogoutClick" text="Logout" />
+            <MenuItem mnemonicParsing="false" onAction="#onQuitClick" text="Quit" />
+      </items>
+    </Menu>
+      <Menu mnemonicParsing="false" text="Author">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#onClickAuthorList" text="Author List" />
+            <MenuItem fx:id="addAuthor" mnemonicParsing="false" onAction="#onClickAddAuthor" text="Add Author" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Book">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#onClickBookList" text="Book List" />
+            <MenuItem fx:id="addBook" mnemonicParsing="false" onAction="#onClickAddBook" text="Add Book" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Reports">
+        <items>
+          <MenuItem fx:id="generateReport" mnemonicParsing="false" onAction="#onGenerateReportClicked" text="Generate Report" />
+        </items>
+      </Menu>
+  </menus>
+</MenuBar>
